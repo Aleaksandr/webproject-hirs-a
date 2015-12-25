@@ -55,6 +55,7 @@ public class BuysController {
     }
 
     @RequestMapping(value="/{id}", method=RequestMethod.DELETE)
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public ModelAndView deleteBuy(@Valid Buy buy) {
         logger.info("*deleteBuy_DELETE*");
         logger.info("***Deleting buy:  " + buy);
@@ -82,7 +83,7 @@ public class BuysController {
 
     @RequestMapping(method=RequestMethod.POST)
     public ModelAndView addBuy(@RequestParam("name") String name,
-                                    @RequestParam("prise") Double prise) {
+                               @RequestParam("prise") Double prise) {
         logger.info("*saveBuy*");
         Buy buy = new Buy();
         buy.setName(name);

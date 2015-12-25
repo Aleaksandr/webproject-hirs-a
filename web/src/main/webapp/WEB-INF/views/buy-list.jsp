@@ -25,11 +25,44 @@
           <td><a href="<c:url value="/buys/${buy.id}" />">${buy.id}</a></td>
           <td><a href="<c:url value="/buys/${buy.id}" />">${buy.name}</a></td>
           <td>${buy.prise}</td>
-          <td><a href="<c:url value="/buys/del/${buy.id}" />" class="fa fa-trash-o fa-fw"></a></td>
+          <td><a href="<c:url value="/buys/${buy.id}" />" class="fa fa-trash-o fa-fw"></a></td>
         </tr>
       </c:forEach>
       </tbody>
     </table>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.fa-trash-o').on('click', function(event) {
+          event.preventDefault();
+          var targA = $(event.target);
+          var link = targA.attr("href");
+          if (link) {
+            $.ajax({
+              url : link,
+              type: 'DELETE',
+              contentType: 'text/html',
+              mimeType: 'text/html',
+              data : null,
+              success: function (data) {
+                targA.closest("tr").remove();
+              }
+            });
+          }
+        })
+      })
+
+      $(document).ajaxStart(function(){
+        $('#loading').show();
+      }).ajaxStop(function(){
+        setTimeout( function(){
+          $('#loading').hide();
+        }, 300);
+      });
+
+    </script>
+
+
   </jsp:attribute>
 
   <jsp:attribute name="bottom_area">
