@@ -1,0 +1,75 @@
+#loading {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    height: 3em;
+    width: 3em;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.btn-default {
+    margin-bottom: 15px;
+}
+
+.header {
+    padding: 30px 10px 20px;
+    position: relative;
+}
+
+.footer {
+    padding: 10px 0 0;
+    font-size: small;
+    text-align: center;
+}
+
+.footer, .push {
+    height: 2em;
+}
+
+.container {
+    position: relative;
+    box-shadow: 0 0 5px 2px #dfdad3;
+    border-radius: 10px;
+}
+
+.content {
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px 0 0 10px;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 0 -2em;
+}
+
+.pagination {
+    margin: 10px;
+    text-align: center;
+    font-size: small;
+}
+
+.button {
+    display: block;
+    background: #fff;
+    border-radius: 3px;
+    margin: 10px 3px;
+    padding: 8px 10px;
+    background: #E3E2DB;
+    box-shadow: 2px 2px 2px 0 #BFBFBF;
+    color: #000;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+}

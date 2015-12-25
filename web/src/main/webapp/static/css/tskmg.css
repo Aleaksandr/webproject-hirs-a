@@ -1,0 +1,60 @@
+#loading {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    height: 3em;
+    width: 3em;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.tskmg-table th {
+    border-bottom: 2px solid #6D6D6D;
+    padding: 1em;
+}
+
+.tskmg-table td {
+    border-bottom: 1px solid #ccc;
+    padding: 1em;
+}
+
+.tskmg-table a {
+    color: #000;
+    text-decoration: none;
+}
+
+.tskmg-table a:hover {
+    text-decoration: underline;
+}
+
+.tskmg-table tr:hover {
+    color: #000;
+    background: #F7F7F7;
+}
+
+.tskmg-table {
+    border-collapse: collapse;
+    width: 100%;
+    word-break: break-all;
+    font-size: small;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+    font-weight: 400;
+    text-align: left;
+    color: #555;
+}
+
+.tskmg-col {
+    width: 0;
+}
+
+.pagination a{
+	color: #000;
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    text-decoration: underline;
+}

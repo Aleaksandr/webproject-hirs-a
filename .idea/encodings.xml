@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/services" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/tags/main_layout.tag" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/web/src/main/webapp/static/css/bootstrap.min.css" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/web/src/main/webapp/static/css/layout.css" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/web/src/main/webapp/static/css/profile.css" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/web/src/main/webapp/static/css/tskmg.css" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/web/src/main/webapp/static/font-awesome-4.1.0" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/web/src/main/webapp/static/js/jquery-2.1.4.min.js" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/web/src/main/webapp/static/js/tasksAjax.js" charset="windows-1251" />
+  </component>
+</project>
