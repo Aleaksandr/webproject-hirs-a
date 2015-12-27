@@ -8,6 +8,8 @@
 <html>
 <head>
     <meta http-equiv="Content-Type: text/html; charset=UTF-8">
+    <link rel="shortcut icon" href='<c:url value="/static/img/faviconka_ru_1442.ico" />' type="image/x-icon">
+    <link rel="icon" href='<c:url value="/static/img/faviconka_ru_1442.ico" />' type="image/x-icon">
     <link type="text/css" rel="stylesheet" href="<c:url value="/static/font-awesome-4.1.0/css/font-awesome.min.css" />"/>
     <link type="text/css" rel="stylesheet" href="<c:url value="/static/css/bootstrap.min.css" />"/>
     <link type="text/css" rel="stylesheet" href="<c:url value="/static/css/layout.css" />"/>
