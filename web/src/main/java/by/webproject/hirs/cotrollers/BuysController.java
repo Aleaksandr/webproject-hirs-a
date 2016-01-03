@@ -103,4 +103,16 @@ public class BuysController {
         logger.info("*NewBuy_Get*");
         return new ModelAndView("buy");
     }
+
+    @RequestMapping(value="/autocomplete", method = RequestMethod.GET)
+    public String[] getBuysListAutocompete() {
+        String[] names = null;
+        logger.info("*getBuysListAutocompete*");
+        try {
+            names = buyManager.getBuysListNameArray();
+        } catch (PersistException e) {
+            logger.error("Error in getBuysList method ", e);
+        }
+        return names;
+    }
 }
