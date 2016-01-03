@@ -13,11 +13,10 @@ import java.util.List;
 
 public interface IBuyDao extends Dao<Buy> {
 
-
 //    /** Gets the appropriate List<Executor> by period */
 //    public List<Buy> getExecutorsByPeriod(int first, int second) throws PersistException;
 //
-    /** Gets all Executors*/
+    /** Gets all Items*/
     public List<Buy> getAll() throws PersistException;
 
     public String[] getBuysListNameArray() throws PersistException;
