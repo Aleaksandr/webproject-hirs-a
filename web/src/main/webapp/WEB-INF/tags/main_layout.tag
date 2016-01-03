@@ -13,7 +13,8 @@
     <link type="text/css" rel="stylesheet" href="<c:url value="/static/font-awesome-4.1.0/css/font-awesome.min.css" />"/>
     <link type="text/css" rel="stylesheet" href="<c:url value="/static/css/bootstrap.min.css" />"/>
     <link type="text/css" rel="stylesheet" href="<c:url value="/static/css/layout.css" />"/>
-    <script type="text/javascript" src="<c:url value="/static/js/jquery-2.1.4.min.js" />"></script>
+    <script type="text/javascript" src="<c:url value="/static/js/jquery-2.1.4.js" />"></script>
+
 
     <jsp:invoke fragment="head_area"/>
 

@@ -20,6 +20,9 @@ public interface BuyManager extends IService<Buy> {
 	/** Gets all Executors*/
 	public List<Buy> getAll() throws PersistException;
 
+	/** Gets all Executors*/
+	public String[] getBuysListNameArray() throws PersistException;
+
 //	/** Gets Executors with status Active*/
 //	public List<Buy> getActiveExecutors() throws PersistException;
 

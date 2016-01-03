@@ -5,11 +5,20 @@
 <t:main_layout>
 
   <jsp:attribute name="head_area">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script type="text/javascript" src="<c:url value="/static/js/buy-list.js" />"></script>
     <title>Buys List</title>
   </jsp:attribute>
 
   <jsp:attribute name="content">
+
+    <label for="autocomplete">Select buy: </label>
+    <input id="autocomplete">
+
     <table class="table table-hover">
+
       <thead>
       <th class="control-col"></th>
       <th>ID</th>
@@ -30,38 +39,6 @@
       </c:forEach>
       </tbody>
     </table>
-
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('.fa-trash-o').on('click', function(event) {
-          event.preventDefault();
-          var targA = $(event.target);
-          var link = targA.attr("href");
-          if (link) {
-            $.ajax({
-              url : link,
-              type: 'DELETE',
-              contentType: 'text/html',
-              mimeType: 'text/html',
-              data : null,
-              success: function (data) {
-                targA.closest("tr").remove();
-              }
-            });
-          }
-        })
-      })
-
-      $(document).ajaxStart(function(){
-        $('#loading').show();
-      }).ajaxStop(function(){
-        setTimeout( function(){
-          $('#loading').hide();
-        }, 300);
-      });
-
-    </script>
-
 
   </jsp:attribute>
 

@@ -7,6 +7,7 @@
 <t:main_layout>
 
   <jsp:attribute name="head_area">
+    <script type="text/javascript" src="<c:url value="/static/js/buy.js" />"></script>
     <title>Buy Item</title>
   </jsp:attribute>
 
@@ -44,55 +45,6 @@
        <a class="btn btn-default" onclick="delBuy()">Delete</a>
        <a class="btn btn-default" onclick="getBuy()">Get</a>
 
-       <script type="text/javascript">
-
-           function updateBuy() {
-               var form = $("#form_buy");
-               form.find('input[name="_method"]').val('PUT');
-               form.submit();
-           }
-
-           function delBuy() {
-               var form = $("#form_buy");
-               form.find('input[name="_method"]').val('DELETE');
-               form.submit();
-           }
-
-           function saveBuy() {
-               var form = $("#form_buy");
-               form.find('input[name="_method"]').val('POST');
-               form.submit();
-           }
-
-           function getBuy() {
-               var form = $("#form_buy");
-               form.find('input[name="_method"]').val('GET');
-               form.submit();
-           }
-
-           $(document).ready(function() {
-               $('#update_btn').on('click',function(){
-                   var form = $("#form_buy");
-                   var url = form.attr("action");
-                   $.ajax({
-                           url: url,
-                           type: 'POST',
-                           data: form.serialize(),
-                           success: function(result) {
-                               window.location = "/buys";
-                           }
-                   });
-               });
-           });
-
-           $(document).ajaxStart(function(){
-               $('#loading').show();
-           }).ajaxStop(function(){
-               setTimeout( function(){
-                   $('#loading').hide();
-               }, 300);
-           });
-       </script>
   </jsp:attribute>
 </t:main_layout>
 

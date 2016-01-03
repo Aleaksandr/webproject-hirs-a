@@ -52,6 +52,21 @@ public class BuyDaoImpl extends BaseDao<Buy> implements IBuyDao {
         return safeLongToInt(count);
     }
 
+    @Override
+    public String[] getBuysListNameArray() {
+        String[] names = new String[0];
+        try {
+            String hql = "SELECT name FROM Buy";
+            Query query = getSession().createQuery(hql);
+            List objets = query.list();
+            names = new String[objets.size()];
+            objets.toArray(names);
+        } catch (HibernateException e) {
+            logger.error("Error getCountBuys method ", e);
+        }
+        return names;
+    }
+
     public static int safeLongToInt(long l) {
         if (l < Integer.MIN_VALUE || l > Integer.MAX_VALUE) {
             throw new IllegalArgumentException

@@ -20,6 +20,8 @@ public interface IBuyDao extends Dao<Buy> {
     /** Gets all Executors*/
     public List<Buy> getAll() throws PersistException;
 
+    public String[] getBuysListNameArray() throws PersistException;
+
     /** Gets count Buys*/
     public int getCountBuys() throws PersistException;
 

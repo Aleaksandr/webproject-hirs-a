@@ -63,6 +63,11 @@ public class ImplBuyManager implements BuyManager {
 	}
 
 	@Override
+	public String[] getBuysListNameArray() throws PersistException {
+		return buyDao.getBuysListNameArray();
+	}
+
+	@Override
 	public Buy add(Buy buy) throws PersistException {
 		return buyDao.save(buy);
 	}
