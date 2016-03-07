@@ -2,7 +2,7 @@
 <%@ tag language="java" pageEncoding="UTF-8"%>
 <%@attribute name="head_area" fragment="true" %>
 <%@attribute name="content" fragment="true" %>
-<%@attribute name="bottom_area" fragment="true" %>
+<%@attribute name="button_area" fragment="true" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <html>
@@ -37,8 +37,8 @@
                 <jsp:invoke fragment="content"/>
             </div>
 
-            <div class="bottoms">
-                <jsp:invoke fragment="bottom_area"/>
+            <div class="buttons">
+                <jsp:invoke fragment="button_area"/>
             </div>
 
             <%--<div class="sidebar">--%>

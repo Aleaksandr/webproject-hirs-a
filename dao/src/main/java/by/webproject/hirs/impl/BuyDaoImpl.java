@@ -7,6 +7,7 @@ import by.webproject.hirs.exception.PersistException;
 import org.apache.log4j.Logger;
 import org.hibernate.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -26,7 +27,9 @@ public class BuyDaoImpl extends BaseDao<Buy> implements IBuyDao {
         super(sessionFactory);
     }
 
+    @Cacheable(value="getAllBuy")
     public List<Buy> getAll() throws PersistException {
+        logger.info("*************getAllBuy");
         List<Buy> newses;
         try {
             String hql = "FROM Buy";

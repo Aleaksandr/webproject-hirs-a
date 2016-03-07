@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <definition name="buy" extends="DefaultTemplate">
+        <put-attribute name="title" value="Buy Item" />
+        <put-attribute name="head_area" value="/WEB-INF/views/buy/head_area.jsp" />
+        <put-attribute name="body" value="/WEB-INF/views/buy/body.jsp" />
+        <put-attribute name="button_area" value="/WEB-INF/views/buy/button.jsp" />
+    </definition>
+
+    <definition name="buy-list" extends="DefaultTemplate">
+        <put-attribute name="title" value="Buys List" />
+        <put-attribute name="head_area" value="/WEB-INF/views/buy-list/head_area.jsp" />
+        <put-attribute name="body" value="/WEB-INF/views/buy-list/body.jsp" />
+        <put-attribute name="button_area" value="/WEB-INF/views/buy-list/button.jsp" />
+    </definition>
+
+</tiles-definitions>

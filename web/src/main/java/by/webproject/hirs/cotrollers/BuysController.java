@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.view.RedirectView;
 
 import javax.validation.Valid;
 import java.util.List;
@@ -47,7 +46,6 @@ public class BuysController {
         logger.info("*updateBuy_PUT*");
         logger.info("***Updating buy:  " + buy);
         try {
-            //buy = buyManager.get(id); //TODO
             buyManager.update(buy);
         } catch (PersistException e) {
             logger.error("Fail Update BUY in base", e);
@@ -103,6 +101,7 @@ public class BuysController {
         logger.info("*NewBuy_Get*");
         return new ModelAndView("buy");
     }
+
 
     @RequestMapping(value="/autocomplete", method = RequestMethod.GET)
     public String[] getBuysListAutocompete() {
