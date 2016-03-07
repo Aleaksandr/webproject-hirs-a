@@ -53,7 +53,6 @@ public class BuysController {
     }
 
     @RequestMapping(value="/{id}", method=RequestMethod.DELETE)
-    @ResponseStatus(HttpStatus.NO_CONTENT)
     public ModelAndView deleteBuy(@Valid Buy buy) {
         logger.info("*deleteBuy_DELETE*");
         logger.info("***Deleting buy:  " + buy);
